@@ -1,0 +1,55 @@
+package exercise;
+
+import java.util.Scanner;
+/*
+ * Guna scanner input:
+    Masukkan dua subject dan markah
+    Nyatakan subjek mana yang lebih besar markah dan mana yang lebih kecil
+    Nyatakan subjek yang mempunyai markah lebih besar daripada 50, calon di kira lulus
+    Nyatakan subjek mana yang lulus dan yang mana gagal
+    
+    Kira purata markah. Markah 80-100 adalah Gred A, markah 60-79 adalah Gred B dan markah 50-59 adalah gred C. Lain2 markah adalah Gagal
+ */
+
+public class grade {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan  = new Scanner (System.in);
+		
+		String subjectA ;
+		String subjectB ;
+		int marksA ;
+		int marksB ;
+		
+		System.out.print("Enter your first subject you take: ");
+		subjectA= scan.next();
+		
+		System.out.print("Enter your marks in the subject: ");
+		marksA=scan.nextInt();
+		
+		System.out.print("Enter your second subject you take: ");
+		subjectB= scan.next();
+		
+		System.out.print("Enter your marks in the subject: ");
+		marksB=scan.nextInt();
+		
+		double avg = (marksA +marksB) / 2;
+		
+		if (marksA < marksB)
+			System.out.println("For the First Subject, you get lower than second subject you received, " + subjectA + marksA);
+		else
+			System.out.println("For the Second Subject, you get higher than first subject you received " + subjectB + marksB);
+		
+		if ((marksA> 50) && (marksB >50))
+			System.out.println("pass");
+		else
+			System.out.println("fail");
+		
+		
+		
+
+	}
+
+}
