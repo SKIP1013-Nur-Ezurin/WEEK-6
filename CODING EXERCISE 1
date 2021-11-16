@@ -1,0 +1,36 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class BMI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner (System.in);
+		
+		double weight;
+		double height;
+				
+		System.out.print("Enter your weight in KG:");
+		weight=input.nextDouble();
+		System.out.print("");
+		
+		System.out.print("Enter your height in metre:");
+		height=input.nextDouble();
+		System.out.print("");
+		
+		double BMI = weight % (height * height) ;
+					
+		if (BMI <18.5)
+			System.out.printf("underweight %.2f" ,BMI );
+		else if ((BMI >=18.5) && (BMI <=24.9))
+			System.out.printf("normal %.2f" , BMI);
+		else if ((BMI >=25.0) && (BMI <=29.9))
+			System.out.printf("overweight %/.2f" , BMI);
+		else 
+			System.out.printf("obese %.2f", BMI);
+
+	}
+
+}
