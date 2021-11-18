@@ -1,0 +1,36 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class switchInteger2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner (System.in);
+		
+		int number;
+		System.out.print("Enter any integer number: ");
+		number=input.nextInt();
+		
+		switch (number) {
+		case 10:
+			System.out.println("Number is 10");
+			break;
+			
+		case 20:
+			System.out.println("Number is 20");
+			break;
+			
+		case 30:
+			System.out.println("Number is 30");
+			break;
+			
+		default:
+			System.out.println("Invalid number");
+			break;
+		}
+		
+
+	}
+
+}
