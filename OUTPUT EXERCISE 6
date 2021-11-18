@@ -1,0 +1,6 @@
+Enter any grade : A
+marks >=90
+Enter any grade : D
+marks >=60 and less than 70
+Enter any grade : G
+Invalid grade
