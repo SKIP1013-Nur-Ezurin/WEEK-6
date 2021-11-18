@@ -1,0 +1,36 @@
+package exercise;
+
+import java.util.Scanner;
+
+/*
+ * Use scanner input, Enter integer number. Jika  number 20 sama dengan input number, print number tersebut
+ */
+public class ifElseIfInteger {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner (System.in);
+		
+		int number;
+		System.out.print("Enter any integer number: ");
+		number=input.nextInt();
+		
+		if (number == 10) {
+			System.out.println("Number is 10");
+		}
+		
+		else if (number==20) {
+			System.out.println("Number is 20");
+		}
+		
+		else if (number==30) {
+			System.out.println("Number is 30");
+		}
+		
+		else {
+			System.out.println("Invalid number");
+		}
+
+	}
+
+}
